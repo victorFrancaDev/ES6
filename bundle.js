@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./functions.js":
-/*!**********************!*\
-  !*** ./functions.js ***!
-  \**********************/
-/*! exports provided: soma */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\nvar soma = function soma() {\n  for (var _len = arguments.length, params = new Array(_len), _key = 0; _key < _len; _key++) {\n    params[_key] = arguments[_key];\n  }\n\n  return params.reduce(function (total, next) {\n    return total + next;\n  });\n};\n\n//# sourceURL=webpack:///./functions.js?");
-
-/***/ }),
-
 /***/ "./main.js":
 /*!*****************!*\
   !*** ./main.js ***!
@@ -106,7 +94,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./functions.js\");\n\nconsole.log(Object(_functions__WEBPACK_IMPORTED_MODULE_0__[\"soma\"])(1, 2));\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _soma__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./soma */ \"./soma.js\");\n//import {soma} from './functions';\n\nconsole.log(Object(_soma__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(1, 4));\n\n//# sourceURL=webpack:///./main.js?");
+
+/***/ }),
+
+/***/ "./soma.js":
+/*!*****************!*\
+  !*** ./soma.js ***!
+  \*****************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return soma; });\nfunction soma(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./soma.js?");
 
 /***/ })
 
